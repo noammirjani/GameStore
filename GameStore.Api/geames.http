@@ -1,0 +1,42 @@
+###
+GET http://localhost:5192
+
+###
+GET http://localhost:5192/games
+
+###
+GET http://localhost:5192/games/1
+
+
+###
+POST http://localhost:5192/games
+Content-Type: application/json
+
+{
+    "name": "GTA V",
+    "genre": "Action",
+    "price": 100,
+    "releaseDate": "2013-09-17"
+}
+
+###
+PUT http://localhost:5192/games/1
+Content-Type: application/json
+
+{
+    "name": "GTA V",
+    "genre": "Action",
+    "price": 100,
+    "releaseDate": "2013-09-17"
+}
+
+###
+DELETE http://localhost:5192/games/1
+
+###
+PATCH http://localhost:5192/games/1
+Content-Type: application/json
+
+{
+    "name": "GTA VI"
+}
