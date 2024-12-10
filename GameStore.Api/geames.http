@@ -13,7 +13,7 @@ POST http://localhost:5192/games
 Content-Type: application/json
 
 {
-    "name": "GTA V",
+    "name": "GTA VI",
     "genre": "Action",
     "price": 100,
     "releaseDate": "2013-09-17"
