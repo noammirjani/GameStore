@@ -18,6 +18,6 @@ var app = builder.Build();
 //all the endpoints are defined in the GameEndpoints.cs
 app.MapGamesEndpoints();
 
-app.MigrateDb();
+await app.MigrateDbAsync();
 
 app.Run();
