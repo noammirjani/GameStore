@@ -1,6 +1,6 @@
 # Build Folders
-*/bin
-*/obj
+**/bin/
+**/obj/
 
 # User-Specific Files
 .vscode/
@@ -11,3 +11,7 @@ node_modules/
 
 # Environment Variables
 .env
+
+# Database Files
+*.db
+*.db-*
