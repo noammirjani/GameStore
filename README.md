@@ -1,80 +1,65 @@
-# 🎮 GameStore
+# GameStore
 
-## Introduction
-
-GameStore is a web application for managing and selling video games. It provides a platform for users to browse, purchase, and review games. Currently, it is a backend system that can be tested using tools like Postman or HTTP files to interact with the API endpoints.
-
-## 📑 Table of Contents
+## Table of Contents
 
 - [Introduction](#introduction)
 - [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Future Enhancements](#future-enhancements)
 - [License](#license)
 
-## 🛠️ Technologies Used
+## Introduction
 
-- **Backend API:** ASP.NET Core
+GameStore is a backend system for managing video games. It provides RESTful API endpoints to enable functionalities such as browsing and updating games. The application can be tested using tools like Postman or HTTP files.
+
+## Technologies Used
+
+- **Framework:** ASP.NET Core
 - **Database:** Entity Framework Core with SQLite
-- **Testing:** Postman, HTTP files
+- **Testing Tools:** Postman, HTTP files
 - **Version Control:** Git
-- **Development Environment:** Visual Studio Code
+- **IDE:** Visual Studio Code
 
-## 🚀 Getting Started
+## Installation
 
 To get started with the GameStore project, follow these steps:
 
-1. **Install .NET SDK:** Download from the [official .NET website](https://dotnet.microsoft.com/download).
-2. **Install SQLite:** Ensure it is available on your system.
-3. **Configure Database:** Set up your database connection string in the `appsettings.json` file.
-4. **Run Migrations:** Set up the database schema:
+1. Clone the repository:
     ```bash
-    dotnet ef database update
+    git clone https://github.com/noammirjani/GameStore.git
     ```
-5. **Build Project:** 
+2. Navigate to the project directory:
     ```bash
-    dotnet build
+    cd GameStore.Api
     ```
-
-## 🌟 Features
-
-- **Game Browsing:** Explore a wide selection of video games.
-- **User Management:** User authentication and profile management.
-- **Shopping Cart:** Add games to a shopping cart and proceed to checkout.
-- **Reviews and Ratings:** Leave reviews and ratings for purchased games.
-
-## 🛠️ Installation
-
-To install the GameStore project, follow these steps:
-
-1. **Clone Repository:**
-    ```bash
-    git clone https://github.com/yourusername/GameStore.git
-    ```
-2. **Navigate to Directory:**
-    ```bash
-    cd GameStore
-    ```
-3. **Restore Dependencies:**
+3. Restore the required dependencies:
     ```bash
     dotnet restore
     ```
+4. Run the application:
+    ```bash
+    dotnet run
+    ```
 
-## ▶️ Usage
+## Usage
 
-To run the application, use one of the following commands:
-
+To run the application locally, use the following command:
 ```bash
-dotnet run --project GameStore.Api/GameStore.Api.csproj
+dotnet run
 ```
-or 
-```bash
-cd GameStore.Api
-dotnet run 
-```
+You can manually test this backend system using HTTP requests. Refer to the HTTP files included in the project or utilize Postman with the specified port for examples.
 
-## 📄 License
+To access the GameStore application, open your web browser and navigate to `http://localhost:5192`.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## Future Enhancements
+
+Planned features for future updates include:
+
+- **Genre Enhancements:** Improved functionality for managing and categorizing game genres.
+- **Frontend Development:** Build a user-friendly interface using Blazor for browsing and purchasing games.
+- **Enhanced User Authentication:** Add features like OAuth and advanced user management.
+
+## License
+
+This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
