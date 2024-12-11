@@ -15,8 +15,9 @@ builder.Services.AddScoped<GameStoreContext>();
 
 var app = builder.Build();
 
-//all the endpoints are defined in the GameEndpoints.cs
+//all the endpoints are registered in the app
 app.MapGamesEndpoints();
+app.MapGenresEndpoints();
 
 await app.MigrateDbAsync();
 
