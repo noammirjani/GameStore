@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 public record class UpdateFieldGameDto(
     [StringLength(50)]string? Name,
-    [StringLength(20)]string? Genre,
+    int? GenreId,
     [Range(1,100)]decimal? Price,
     DateOnly? ReleaseDate
 );
